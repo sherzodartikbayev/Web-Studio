@@ -573,13 +573,12 @@ body {
 
 	.portfolio {
 		padding: 60px 15px;
-		width: 100%;
-
-		.portfolio__card {
-			width: 450px;
-		}
 	}
-	
+
+	.team {
+		padding: 60px 15px;
+	}
+
 	.footer__contact {
 		width: 100%;
 		display: flex;
@@ -594,5 +593,9 @@ body {
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 60px;
+	}
+
+	.footer .footer__container .footer__email .email__form .email__input {
+		width: auto;
 	}
 }
