@@ -82,6 +82,9 @@ body {
 .header .header__contact li a:hover {
   color: #2196f3;
 }
+.header .menu {
+  display: none;
+}
 
 .hero {
   background-image: url("../images/hero.png");
@@ -119,7 +122,7 @@ body {
   transition: 0.5s ease;
 }
 .hero .hero__container .hero__btn:hover {
-  background-color: #ffffff;
+  background: none;
   color: #2196f3;
 }
 
@@ -283,7 +286,7 @@ body {
 .client .client__cart .client__card {
   width: 160px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -291,6 +294,201 @@ body {
 }
 .client .client__cart .client__card:hover {
   border: 1px solid #2196f3;
+}
+
+.footer {
+  padding: 60px 100px;
+  background: #2f303a;
+}
+.footer .footer__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer .footer__container .footer__contact .footer__logo {
+  width: 145px;
+  height: 31px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.footer .footer__container .footer__contact .footer__contact__location {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.footer .footer__container .footer__contact .footer__contact__email,
+.footer .footer__container .footer__contact .footer__contact__number {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  color: #757575;
+  margin-bottom: 8px;
+}
+.footer .footer__container .footer__social .footer__social__title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer .footer__container .footer__social .footer__social__medias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.footer .footer__container .footer__social .footer__social__medias li {
+  width: 44px;
+  height: 44px;
+  background-color: #44454e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.footer .footer__container .footer__social .footer__social__medias li:hover {
+  background-color: #2196f3;
+}
+.footer .footer__container .footer__social .footer__social__medias li a img {
+  display: flex;
+}
+.footer .footer__container .footer__email .footer__email__title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer .footer__container .footer__email .email__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.footer .footer__container .footer__email .email__form .email__input {
+  padding: 15px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid #757575;
+  background: none;
+  color: #757575;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3%;
+}
+.footer .footer__container .footer__email .email__form .email__btn {
+  width: 200px;
+  height: 50px;
+  background-color: #2196f3;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 6%;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 26px 15px;
+  }
+  .header .header__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .portfolio__work {
+    display: none;
+  }
+  .footer__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer__social {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer__email {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .footer__email .email__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .section-title {
+    font-weight: 700;
+    letter-spacing: 3%;
+    font-size: 28px;
+  }
+  .header .header__links {
+    display: none;
+  }
+  .header .header__contact {
+    display: none;
+  }
+  .header .menu {
+    display: block;
+  }
+  .hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    letter-spacing: 6%;
+    margin-bottom: 30px;
+  }
+  .portfolio {
+    padding: 60px 15px;
+    width: 100%;
+  }
+  .portfolio .portfolio__card {
+    width: 450px;
+  }
+  .footer__contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .footer__social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
