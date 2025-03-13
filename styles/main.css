@@ -474,6 +474,16 @@ body {
   .team {
     padding: 60px 15px;
   }
+  .team .team__cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer {
+    text-align: center;
+  }
   .footer__contact {
     width: 100%;
     display: flex;
