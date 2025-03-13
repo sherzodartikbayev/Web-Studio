@@ -157,7 +157,7 @@ body {
 	// Portfolio Cards
 	.portfolio__cart {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		align-items: center;
 		gap: 30px;
 		flex-wrap: wrap;
@@ -203,7 +203,7 @@ body {
 
 		.portfolio__work__cart {
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-evenly;
 			align-items: center;
 			flex-wrap: wrap;
 			gap: 30px;
@@ -246,3 +246,115 @@ body {
 		}
 	}
 }
+// Portfolio End
+
+// Team
+.team {
+	padding: 94px 100px;
+	background-color: #f5f4fa;
+
+	& .section-title {
+		margin-bottom: 50px;
+	}
+
+	.team__cart {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 30px;
+
+		.team__card {
+			width: 260px;
+			height: 428px;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			gap: 30px;
+			background-color: $white;
+
+			.team__card__img img {
+				width: 100%;
+				height: 250px;
+				object-fit: contain;
+				
+			}
+
+			.team__card__detail {
+				padding: 0 32px;
+				text-align: center;
+
+				.team__card__detail__name {
+					font-weight: 500;
+					font-size: 16px;
+					letter-spacing: 3%;
+					margin-bottom: 10px;
+				}
+
+				.team__card__detail__job {
+					font-weight: 400;
+					font-size: 16px;
+					letter-spacing: 3%;
+					color: $gray;
+					margin-bottom: 16px;
+				}
+
+				.team__card__detail__social {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					gap: 10px;
+					list-style: none;
+
+					& li {
+						width: 44px;
+						height: 44px;
+						border-radius: 100%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						transition: .5s ease;
+
+						&:hover {
+							background-color: $primary-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// Team End
+
+// Client
+.client {
+	padding: 94px 100px;
+	background-color: $white;
+
+	& .section-title {
+		margin-bottom: 50px;
+	}
+
+	.client__cart {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 30px;
+
+		.client__card {
+			width: 160px;
+			height: 92px;
+			border: 1px solid #AFB1B8;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+
+			&:hover {
+				border: 1px solid $primary-color;
+			}
+		}
+	}
+}
+// Client End
